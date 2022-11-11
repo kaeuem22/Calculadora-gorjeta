@@ -1,0 +1,44 @@
+@media (min-width: 700px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  main {
+    margin-inline: 2rem;
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+    margin-bottom: 14.9375rem;
+  }
+
+  .results {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .input-boxes input {
+    width: 30%;
+  }
+
+  .results {
+    margin-left: 3rem;
+    width: 25.8125rem;
+    height: 26.0625rem;
+  }
+
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+}
