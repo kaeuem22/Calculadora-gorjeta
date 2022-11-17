@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./calculadora-gorjeta/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Calculadora de gorjetas</title>
+</head>
+
+<body>
+    <header>
+        <img src="./calculadora-gorjeta/images/logo.svg" alt="Logo do Splitter">
+    </header>
+    <main>
+        <form>
+            <div class="bill distance">
+                <h2>Bill</h2>
+                <div class="input-box">
+                    <img src="./calculadora-gorjeta/images/icon-dollar.svg">
+                    <input type="number" id="price" placeholder="0" onkeyup="gorjeta()">
+                </div>
+            </div>
+
+            <div class="tip distance">
+                <h2>Select Tip %</h2>
+                <div class="input-boxes">
+                    <input type="button" onclick="porcentagem(5)" value="5%">
+                    <input type="button" onclick="porcentagem(10)" value="10%">
+                    <input type="button" onclick="porcentagem(15)" value="15%">
+                    <input type="button" onclick="porcentagem(25)" value="25%">
+                    <input type="button" onclick="porcentagem(50)" value="50%">
+                    <input type="number" id="custom" placeholder="Custom" onkeyup="gorjeta()">
+                </div>
+            </div>
+
+            <div class="people distance">
+                <h2 class="wrong">number of people</h2>
+                <div class="input-box" id="iBox">
+                    <img src="./calculadora-gorjeta/images/icon-person.svg">
+                    <input type="number" id="numberPeople" placeholder="0"
+                        onkeyup="gorjeta()">
+                </div>
+            </div>
+        </form>
+
+        <section class="results distance">
+            <div class="parcial">
+                <p>Tip amount
+                    <br>
+                    <span>/ Person</span>
+                </p>
+                <strong id="parcial-result">$0.00</strong>
+            </div>
+
+            <div class="total">
+                <p>Total
+                    <br>
+                    <span>/ Person</span>
+                </p>
+                <strong id="total-result">$0.00</strong>
+            </div>
+
+            <input type="button" id="button" onclick="reload()" value="Reset">
+        </section>
+    </main>
+</body>
+
+</html>
