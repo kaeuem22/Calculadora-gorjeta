@@ -1,0 +1,55 @@
+@media (min-width: 700px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  main {
+    margin-inline: 2rem;
+    display: flex;
+    max-width: 60.7rem;
+    flex-direction: row;
+    border-radius: 25px;
+    margin-bottom: 14.9375rem;
+  }
+
+  .results {
+    display: flex;
+    max-width: 30.35rem;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  form{
+    padding: 1.5rem;
+  }
+
+  .input-boxes input {
+    width: 30%;
+  }
+
+  form, .results{
+    width: 100%;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  .results strong{
+    font-size: 3rem;
+  }
+
+  .parcial{
+    margin-bottom: 2.56rem;
+  }
+}
+
+.diferent{
+  background: var(--hover-cyan);
+  color: var(--very-dark-cyan);
+}
